@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O meni - Omer Smailbegović</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tvoj CSS (Pretpostavlja se da se koristi isti style.css) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Dodatni CSS za ovu stranicu (ako je potrebno) -->
+    <style>
+        /* Osigurava da se tekst za O meni prikaže u centru i sa dobrim marginama */
+        .about-content {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .about-content h2 {
+            color: #ff8c00;
+            /* Narandžasta boja za naslov */
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .image-placeholder {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff8c00;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+
+        <!-- HEADER (ZA LOGO 'OS') - Isti kao na index.html -->
+        <div class="header-container mb-3">
+            <header>
+                <img src="logo.png" alt="">
+            </header>
+        </div>
+
+
+        <!-- NAVBAR (NARANDŽASTA TRAKA) - Isti kao na index.html -->
+        <nav class="navbar navbar-expand-lg w-100 p-3" style="background-color: #ff8c00;">
+            <div class="container-fluid">
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!-- Vodi nazad na index.html -->
+                            <a class="nav-link text-white fw-bold link-style" href="index.html">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Link vraća na početnu stranicu -->
+                            <a class="nav-link text-white fw-bold link-style" href="index.html">Proizvodi</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Link na aktivnoj stranici -->
+                            <a class="nav-link text-white fw-bold link-style" href="#">Karijera</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- TRAKA ZA PRETRAGU -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pretraživanje" aria-label="Search"
+                        style="width: 250px;">
+                    <button class="btn btn-warning text-white fw-bold" type="submit"
+                        style="background-color: #ff8c00; border: 1px solid white;">Pretraži</button>
+                </form>
+
+            </div>
+        </nav>
+
+        <!-- GLAVNI SADRŽAJ STRANICE "O MENI" -->
+        <div class="container about-content shadow-lg">
+
+            <h2 class="text-center">O meni</h2>
+            <h2 class="text-center"> Omer Smailbegović</h2>
+
+            <!-- SEKCIIJA ZA SLIKU -->
+            <div class="text-center mb-4">
+                <!-- Zamenite URL u 'src' atributu sa putanjom do vaše slike! -->
+                <img src="OmerS.jpg" alt="Omer Smailbegović" class="image-placeholder">
+                <p class="text-muted"><small></small></p>
+            </div>
+
+            <p class="lead">Zovem se <strong>Omer Smailbegović</strong> i rođen sam 12. aprila 2012. godine. Moja priča
+                u svijetu programiranja nije priča o profesionalnom iskustvu, već priča o neizmjernoj strasti,
+                radoznalosti i želji za stvaranjem.</p>
+
+            <p>Ja sam običan, ali ambiciozan programer koji je odlučio da sve svoje znanje, vrijeme i silan trud uloži u
+                jedan veliki cilj: <strong>kreiranje svog prvog pravog web sajta.</strong></p>
+
+            <p>Ova platforma koju upravo posjećujete je kruna tog truda. Ona predstavlja mnogo više od koda; ona je
+                dokaz da se uz posvećenost i neprestano učenje može ostvariti svaki cilj. Svaka linija koda ovdje
+                napisana je s ljubavlju i željom da se stvori nešto funkcionalno, lijepo i, prije svega, korisno.</p>
+
+            <p>Pridružite mi se na ovom putovanju i pratite kako moja digitalna vizija raste i razvija se.</p>
+
+            <hr>
+            <p class="text-muted"><small>Ovaj sajt je moj prvi projekat i pokreće me čista želja za
+                    programiranjem.</small></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
