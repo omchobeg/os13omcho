@@ -636,3 +636,166 @@ body {
     border-radius: 14px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
+
+/* --- 1. OSNOVNA POSTAVKA I FONTOVI --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #ff9f43;    /* Moderna plava */
+    --text-dark: #1f2937;       /* Tamno siva za tekst */
+    --text-light: #6b7280;      /* Svjetlija siva za opise */
+    --bg-light: #f9fafb;        /* Pozadina sekcije */
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+/* --- 2. KONTEJNERI --- */
+.about-wrapper {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* --- 3. MISIJA I VIZIJA (Gornji dio) --- */
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    border: 1px solid #edf2f7;
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.card p {
+    color: var(--text-light);
+}
+
+/* --- 4. TIM SEKCIJA --- */
+.team {
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-content: center;
+}
+
+/* --- 5. POJEDINAČNI ČLAN TIMA --- */
+.team-member {
+    text-align: center;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.team-member:hover {
+    background: #f8faff;
+}
+
+.member-img {
+    width: 140px;
+    height: 140px;
+    background-color: #e5e7eb;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 4px solid var(--white);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-image: url('https://via.placeholder.com/150'); /* Zamijeni svojim URL-om slike */
+    background-size: cover;
+    background-position: center;
+    transition: var(--transition);
+}
+
+.team-member:hover .member-img {
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.team-member h4 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+.role {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+/* --- 6. RESPONZIVNOST --- */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-wrapper {
+        padding: 40px 15px;
+    }
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Ovo sprečava da se slika rastegne */
+    display: block;
+}
+
+.member-bio {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 10px;
+    padding: 0 10px;
+}
